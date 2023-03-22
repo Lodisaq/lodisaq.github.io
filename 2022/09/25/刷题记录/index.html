@@ -20,17 +20,21 @@
     var CONFIG = {"hostname":"example.com","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="行百里者半九十">
-<meta property="og:type" content="website">
+  <meta name="description" content="面试题 08.08. 有重复字符串的排列组合有&#x2F;无重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。  ans：深度优先搜索 dfs deep first search：用于遍历或搜索图&#x2F;树的算法。 思路：  创建结果存储变量， 初始化当前变量  设计递归函数，大致流程：  到达结尾返回 未到达结尾更新当前结果 到达末尾子节点，进行最优结果更新 分别对当前节点的左">
+<meta property="og:type" content="article">
 <meta property="og:title" content="夏木晓春">
-<meta property="og:url" content="http://example.com/archives/">
+<meta property="og:url" content="http://example.com/2022/09/25/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/">
 <meta property="og:site_name" content="夏木晓春">
-<meta property="og:description" content="行百里者半九十">
+<meta property="og:description" content="面试题 08.08. 有重复字符串的排列组合有&#x2F;无重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。  ans：深度优先搜索 dfs deep first search：用于遍历或搜索图&#x2F;树的算法。 思路：  创建结果存储变量， 初始化当前变量  设计递归函数，大致流程：  到达结尾返回 未到达结尾更新当前结果 到达末尾子节点，进行最优结果更新 分别对当前节点的左">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20220925192028805.png">
+<meta property="article:published_time" content="2022-09-25T10:56:10.371Z">
+<meta property="article:modified_time" content="2022-09-25T13:20:06.790Z">
 <meta property="article:author" content="Lodisaq">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20220925192028805.png">
 
-<link rel="canonical" href="http://example.com/archives/">
+<link rel="canonical" href="http://example.com/2022/09/25/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/">
 
 
 <script id="page-configurations">
@@ -38,12 +42,12 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>归档 | 夏木晓春</title>
+  <title> | 夏木晓春</title>
   
 
 
@@ -141,90 +145,94 @@
         <div class="content-wrap">
           
 
-          <div class="content archive">
+          <div class="content post posts-expand">
             
 
+    
   
   
-  
-  <div class="post-block">
-    <div class="posts-collapse">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 3 篇日志。 继续努力。</span>
-      </div>
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/09/25/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Lodisaq">
+      <meta itemprop="description" content="行百里者半九十">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夏木晓春">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2022-09-25 18:56:10 / 修改时间：21:20:06" itemprop="dateCreated datePublished" datetime="2022-09-25T18:56:10+08:00">2022-09-25</time>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    <div class="collection-year">
-      <span class="collection-header">2022</span>
-    </div>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-09-25T18:56:10+08:00"
-              content="2022-09-25">
-          09-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/09/25/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/" itemprop="url">
-            <span itemprop="name">未命名</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-05-18T17:46:53+08:00"
-              content="2022-05-18">
-          05-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/05/18/My-New-Post/" itemprop="url">
-            <span itemprop="name">My New Post</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <div class="post-meta">
-        <time itemprop="dateCreated"
-              datetime="2022-05-18T14:35:05+08:00"
-              content="2022-05-18">
-          05-18
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2022/05/18/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-    </header>
-  </article>
-
+        <h4 id="面试题-08-08-有重复字符串的排列组合"><a href="#面试题-08-08-有重复字符串的排列组合" class="headerlink" title="面试题 08.08. 有重复字符串的排列组合"></a><a target="_blank" rel="noopener" href="https://leetcode.cn/problems/permutation-ii-lcci/">面试题 08.08. 有重复字符串的排列组合</a></h4><p>有&#x2F;无重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。</p>
+<p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20220925192028805.png" alt="image-20220925192028805"></p>
+<h1 id="ans："><a href="#ans：" class="headerlink" title="ans："></a>ans：</h1><h4 id="深度优先搜索-dfs-deep-first-search："><a href="#深度优先搜索-dfs-deep-first-search：" class="headerlink" title="深度优先搜索 dfs deep first search："></a>深度优先搜索 dfs deep first search：</h4><p>用于遍历或搜索图&#x2F;树的算法。</p>
+<p>思路：</p>
+<ol>
+<li><p>创建结果存储变量， 初始化当前变量</p>
+</li>
+<li><p>设计递归函数，大致流程：</p>
+<ul>
+<li>到达结尾返回</li>
+<li>未到达结尾更新当前结果</li>
+<li>到达末尾子节点，进行最优结果更新</li>
+<li>分别对当前节点的左&#x2F;右子节点调用递归函数</li>
+</ul>
+</li>
+<li><p>调用递归</p>
+</li>
+</ol>
 
     </div>
-  </div>
-  
-  
-  
 
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2022/05/18/My-New-Post/" rel="prev" title="My New Post">
+      <i class="fa fa-chevron-left"></i> My New Post
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
   
 
 
@@ -277,6 +285,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E9%9D%A2%E8%AF%95%E9%A2%98-08-08-%E6%9C%89%E9%87%8D%E5%A4%8D%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%8E%92%E5%88%97%E7%BB%84%E5%90%88"><span class="nav-number">1.</span> <span class="nav-text">面试题 08.08. 有重复字符串的排列组合</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#ans%EF%BC%9A"><span class="nav-number"></span> <span class="nav-text">ans：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B7%B1%E5%BA%A6%E4%BC%98%E5%85%88%E6%90%9C%E7%B4%A2-dfs-deep-first-search%EF%BC%9A"><span class="nav-number">1.</span> <span class="nav-text">深度优先搜索 dfs deep first search：</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
