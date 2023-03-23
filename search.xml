@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title></title>
+      <link href="/2023/03/23/test/"/>
+      <url>/2023/03/23/test/</url>
+      
+        <content type="html"><![CDATA[<p>this is a test </p><h1 id="From-the-people-to-the-people"><a href="#From-the-people-to-the-people" class="headerlink" title="From the people ,to the people"></a>From the people ,to the people</h1>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="/2022/09/25/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+      <url>/2022/09/25/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h4 id="面试题-08-08-有重复字符串的排列组合"><a href="#面试题-08-08-有重复字符串的排列组合" class="headerlink" title="面试题 08.08. 有重复字符串的排列组合"></a><a href="https://leetcode.cn/problems/permutation-ii-lcci/">面试题 08.08. 有重复字符串的排列组合</a></h4><p>有&#x2F;无重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。</p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20220925192028805.png" alt="image-20220925192028805"></p><h1 id="ans："><a href="#ans：" class="headerlink" title="ans："></a>ans：</h1><h4 id="深度优先搜索-dfs-deep-first-search："><a href="#深度优先搜索-dfs-deep-first-search：" class="headerlink" title="深度优先搜索 dfs deep first search："></a>深度优先搜索 dfs deep first search：</h4><p>用于遍历或搜索图&#x2F;树的算法。</p><p>思路：</p><ol><li><p>创建结果存储变量， 初始化当前变量</p></li><li><p>设计递归函数，大致流程：</p><ul><li>到达结尾返回</li><li>未到达结尾更新当前结果</li><li>到达末尾子节点，进行最优结果更新</li><li>分别对当前节点的左&#x2F;右子节点调用递归函数</li></ul></li><li><p>调用递归</p></li></ol>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>My New Post</title>
+      <link href="/2022/05/18/My-New-Post/"/>
+      <url>/2022/05/18/My-New-Post/</url>
+      
+        <content type="html"><![CDATA[<h1 id="这是一个标题哦"><a href="#这是一个标题哦" class="headerlink" title="这是一个标题哦"></a>这是一个标题哦</h1><h2 id="这也是一个标题"><a href="#这也是一个标题" class="headerlink" title="这也是一个标题"></a>这也是一个标题</h2><h1 id="卧槽？》"><a href="#卧槽？》" class="headerlink" title="卧槽？》"></a>卧槽？》</h1><h2 id="啊这"><a href="#啊这" class="headerlink" title="啊这"></a>啊这</h2><p>换行了 安师大</p><p>卧槽<em>斜体</em><br>卧槽<strong>加粗</strong><br>卧槽<em><strong>加粗并且斜体</strong></em></p><blockquote><p>分块了哦</p></blockquote><ol><li>排安师大asdasdqwe安师大卅asdasssssssssssssssssssssssssssssssssss</li><li>qwe</li></ol><hr><p><code>print(&quot;hellow world&quot;)</code></p><hr><p>这是一个链接<a href="https://www.bilibili.com/video/BV1Ah411U7w7?spm_id_from=333.999.0.0%22hihi%22">black</a></p><p><a href="https://www.bilibili.com/video/BV1Ah411U7w7?spm_id_from=333.999.0.0%22hihi%22"><img src="https://markdown.com.cn/assets/img/philly-magic-garden.9c0b4415.jpg" alt="a picture"></a></p><p>数学公式哦<br>$$<br>y &#x3D; x^2+3<br>$$</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2022/05/18/hello-world/"/>
+      <url>/2022/05/18/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+  
+  
+</search>
