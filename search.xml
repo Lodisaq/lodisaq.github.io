@@ -4,19 +4,6 @@
   
     
     <entry>
-      <title></title>
-      <link href="/2023/03/23/test/"/>
-      <url>/2023/03/23/test/</url>
-      
-        <content type="html"><![CDATA[<p>this is a test </p><h1 id="From-the-people-to-the-people"><a href="#From-the-people-to-the-people" class="headerlink" title="From the people ,to the people"></a>From the people ,to the people</h1>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>leetcode 08.08有重复字符串的排列组合</title>
       <link href="/2023/03/23/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
       <url>/2023/03/23/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
@@ -29,19 +16,6 @@
           <category> leetcode </category>
           
       </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>My New Post</title>
-      <link href="/2022/05/18/My-New-Post/"/>
-      <url>/2022/05/18/My-New-Post/</url>
-      
-        <content type="html"><![CDATA[<h1 id="这是一个标题哦"><a href="#这是一个标题哦" class="headerlink" title="这是一个标题哦"></a>这是一个标题哦</h1><h2 id="这也是一个标题"><a href="#这也是一个标题" class="headerlink" title="这也是一个标题"></a>这也是一个标题</h2><h1 id="卧槽？》"><a href="#卧槽？》" class="headerlink" title="卧槽？》"></a>卧槽？》</h1><h2 id="啊这"><a href="#啊这" class="headerlink" title="啊这"></a>啊这</h2><p>换行了 安师大</p><p>卧槽<em>斜体</em><br>卧槽<strong>加粗</strong><br>卧槽<em><strong>加粗并且斜体</strong></em></p><blockquote><p>分块了哦</p></blockquote><ol><li>排安师大asdasdqwe安师大卅asdasssssssssssssssssssssssssssssssssss</li><li>qwe</li></ol><hr><p><code>print(&quot;hellow world&quot;)</code></p><hr><p>这是一个链接<a href="https://www.bilibili.com/video/BV1Ah411U7w7?spm_id_from=333.999.0.0%22hihi%22">black</a></p><p><a href="https://www.bilibili.com/video/BV1Ah411U7w7?spm_id_from=333.999.0.0%22hihi%22"><img src="https://markdown.com.cn/assets/img/philly-magic-garden.9c0b4415.jpg" alt="a picture"></a></p><p>数学公式哦<br>$$<br>y &#x3D; x^2+3<br>$$</p>]]></content>
-      
       
       
     </entry>
