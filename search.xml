@@ -4,19 +4,27 @@
   
     
     <entry>
-      <title>leetcode 08.08有重复字符串的排列组合</title>
-      <link href="/2023/03/23/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
-      <url>/2023/03/23/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+      <title>中科创达java开发</title>
+      <link href="/2023/03/27/%E9%9D%A2%E8%AF%95java%E5%BC%80%E5%8F%91/"/>
+      <url>/2023/03/27/%E9%9D%A2%E8%AF%95java%E5%BC%80%E5%8F%91/</url>
       
-        <content type="html"><![CDATA[<h2 id="面试题-08-08-有重复字符串的排列组合"><a href="#面试题-08-08-有重复字符串的排列组合" class="headerlink" title="面试题 08.08. 有重复字符串的排列组合:"></a><a href="https://leetcode.cn/problems/permutation-ii-lcci/">面试题 08.08. 有重复字符串的排列组合:</a></h2><p>有&#x2F;无重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。</p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20220925192028805.png" alt="image-20220925192028805"></p><h4 id="ans："><a href="#ans：" class="headerlink" title="ans："></a>ans：</h4><h5 id="深度优先搜索-dfs-deep-first-search："><a href="#深度优先搜索-dfs-deep-first-search：" class="headerlink" title="深度优先搜索 dfs deep first search："></a>深度优先搜索 dfs deep first search：</h5><p>用于遍历或搜索图&#x2F;树的算法。</p><p>思路：</p><ol><li><p>创建结果存储变量， 初始化当前变量</p></li><li><p>设计递归函数，大致流程：</p><ul><li>到达结尾返回</li><li>未到达结尾更新当前结果</li><li>到达末尾子节点，进行最优结果更新</li><li>分别对当前节点的左&#x2F;右子节点调用递归函数</li></ul></li><li><p>调用递归</p></li></ol>]]></content>
+        <content type="html"><![CDATA[<p>中创科达说一下Java中常用的引用类型；Switch语法糖；反射以及对应的API；内部类和外部类的区别《《《static和final关键字的用法和作用》》》final 关键字，意思是最终的、不可修改的，最见不得变化 ，用来修饰类、方法和变量，具有以下特点：<br>final 修饰的类不能被继承，final 类中的所有成员方法都会被隐式的指定为 final 方法；</p><p>final 修饰的方法不能被重写；</p><p>final 修饰的变量是常量，如果是基本数据类型的变量，则其数值一旦在初始化之后便不能更改；如果是引用类型的变量，则在对其初始化之后便不能让其指向另一个对象。<br>static 关键字主要有以下四种使用场景：<br>修饰成员变量和成员方法:被 static 修饰的成员属于类，不属于单个这个类的某个对象，被类中所有对象共享，可以并且建议通过类名调用。被 static 声明的成员变量属于静态成员变量，静态变量 存放在 Java 内存区域的方法区。调用格式：类名.静态变量名类名.静态方法名()</p><p>静态代码块:静态代码块定义在类中方法外, 静态代码块在非静态代码块之前执行(静态代码块—&gt;非静态代码块—&gt;构造方法)。 该类不管创建多少对象，静态代码块只执行一次.</p><p>静态内部类（static 修饰类的话只能修饰内部类）：静态内部类与非静态内部类之间存在一个最大的区别: 非静态内部类在编译完成之后会隐含地保存着一个引用，该引用是指向创建它的外围类，但是静态内部类却没有。没有这个引用就意味着：1. 它的创建是不需要依赖外围类的创建。2. 它不能使用任何外围类的非 static 成员变量和方法。</p><p>静态导包(用来导入类中的静态资源，1.5 之后的新特性):格式为：import static这两个关键字连用可以指定导入某个类中的指定静态资源，并且不需要使用类名调用类中静态成员，可以直接使用类中静态成员变量和成员方法。<br>成员变量和成员方法《《《arrlylist和voctor的区别；》》》ArrayList是List的主要实现类，底层使用Object[]存储，适用于频繁的查找工作，线程不安全 ；Vector是List的古老实现类，底层使用Object[]存储，线程安全的。《《《ArrayList和linkedlist的区别；》》》是否保证线程安全：ArrayList 和 LinkedList 都是不同步的，也就是不保证线程安全；底层数据结构：Arraylist 底层使用的是Object数组；LinkedList 底层使用的是双向循环链表数据结构；插入和删除是否受元素位置的影响：ArrayList 采用数组存储，所以插入和删除元素的时间复杂度受元素位置的影响。LinkedList 采用链表存储，所以插入，删除元素时间复杂度不受元素位置的影响。是否支持快速随机访问：LinkedList 不支持高效的随机元素访问，而ArrayList 实现随机访问功能。快速随机访问就是通过元素的序号快速获取元素对象(对应于get(int index)方法)内存空间占用：ArrayList的空 间浪费主要体现在在list列表的结尾会预留一定的容量空间，而LinkedList的空间花费则体现在它的每一个元素都需要消耗比ArrayList更多的空间（因为要存放直接后继和直接前驱以及数据）。《《《数据类型有几种、有什么区别》》》Java 中有 8 种基本数据类型，分别为：<br>6 种数字类型：<br>4 种整数型：byte、short、int、long<br>2 种浮点型：float、double<br>1 种字符类型：char<br>1 种布尔型：boolean。<br>这 8 种基本数据类型的默认值以及所占空间的大小如下：<br>基本类型位数字节默认值取值范围byte810-128 ~ 127short1620-32768 ~ 32767int3240-2147483648 ~ 2147483647long6480L-9223372036854775808 ~ 9223372036854775807char162’u0000’0 ~ 65535float3240f1.4E-45 ~ 3.4028235E38double6480d4.9E-324 ~ 1.7976931348623157E308boolean1falsetrue、false<br>《《《进程、线程定义及区别》》》》一个进程中可以有多个线程，多个线程共享进程的堆和方法区 (JDK1.8 之后的元空间)<em>资源，但是每个线程有自己的</em>程序计数器、虚拟机栈和本地方法栈。总结：线程是进程划分成的更小的运行单位,一个进程在其执行的过程中可以产生多个线程。线程和进程最大的不同在于基本上各进程是独立的，而各线程则不一定，因为同一进程中的线程极有可能会相互影响。线程执行开销小，但不利于资源的管理和保护；而进程正相反《《《深浅拷贝的区别》》》浅拷贝：浅拷贝会在堆上创建一个新的对象（区别于引用拷贝的一点），不过，如果原对象内部的属性是引用类型的话，浅拷贝会直接复制内部对象的引用地址，也就是说拷贝对象和原对象共用同一个内部对象。深拷贝：深拷贝会完全复制整个对象，包括这个对象所包含的内部对象。垃圾回收机制线程安全、死锁Java线程实现方式；runnable接口；继承自thread类；线程池；callable；解决线程不安全的办法线程不安全的原因：1.线程之间是抢占式执行的；2.多个线程修改同一个变量；3.原子性；4.内存可见性；5.指令重排序解决方案：上syn锁linux常用命令，举例说明《《《http状态码》》》《《《http和https的区别》》》端口号：HTTP 默认是 80，HTTPS 默认是 443。URL 前缀：HTTP 的 URL 前缀是http:&#x2F;&#x2F;，HTTPS 的 URL 前缀是https:&#x2F;&#x2F;。安全性和资源消耗： HTTP 协议运行在 TCP 之上，所有传输的内容都是明文，客户端和服务器端都无法验证对方的身份。HTTPS 是运行在 SSL&#x2F;TLS 之上的 HTTP 协议，SSL&#x2F;TLS 运行在 TCP 之上。所有传输的内容都经过加密，加密采用对称加密，但对称加密的密钥用服务器方的证书进行了非对称加密。所以说，HTTP 安全性没有 HTTPS 高，但是 HTTPS 比 HTTP 耗费更多服务器资源。三次握手、四次回收《《《http中get 和 post的区别》》》<br>GET在浏览器回退时是无害的，而POST会再次提交请求。</p><p>GET产生的URL地址可以被Bookmark，而POST不可以。</p><p>GET请求会被浏览器主动cache，而POST不会，除非手动设置。</p><p>GET请求只能进行url编码，而POST支持多种编码方式。</p><p>GET请求参数会被完整保留在浏览器历史记录里，而POST中的参数不会被保留。</p><p>GET请求在URL中传送的参数是有长度限制的，而POST么有。</p><p>对参数的数据类型，GET只接受ASCII字符，而POST没有限制。</p><p>GET比POST更不安全，因为参数直接暴露在URL上，所以不能用来传递敏感信息。</p><p>GET参数通过URL传递，POST放在Request body中。<br>可以把 get 和 post 当作两个不同的行为，两者并没有什么本质区别，底层都是 TCP 连接。 get请求用来从服务器上获得资源，而post是用来向服务器提交数据。《《《重载和重写的区别；》》》方法的重载和重写都是实现多态的方式，区别在于前者实现的是编译时的多态性，而后者实现的是运行时的多态性。重载发生在一个类中，同名的方法如果有不同的参数列表（参数类型不同、参数个数不同或者二者都不同）则视为重载；重写发生在子类与父类之间，重写要求子类被重写方法与父类被重写方法有相同的参数列表，有兼容的返回类型，比父类被重写方法更好访问，不能比父类被重写方法声明更多的异常（里氏代换原则）。重载对返回类型没有特殊的要求，不能根据返回类型进行区分。《《《equals和&#x3D;&#x3D;区别；》》》&#x3D;&#x3D;对于基本类型和引用类型的作用效果是不同的：<br>对于基本数据类型来说，&#x3D;&#x3D;比较的是值。<br>对于引用数据类型来说，&#x3D;&#x3D;比较的是对象的内存地址。<br>因为 Java 只有值传递，所以，对于 &#x3D;&#x3D; 来说，不管是比较基本数据类型，还是引用数据类型的变量，其本质比较的都是值，只是引用类型变量存的值是对象的地址。equals()不能用于判断基本数据类型的变量，只能用来判断两个对象是否相等。equals()方法存在于Object类中，而Object类是所有类的直接或间接父类，因此所有的类都有equals()方法。equals()方法存在两种使用情况：<br>类没有重写equals()方法：通过equals()比较该类的两个对象时，等价于通过“&#x3D;&#x3D;”比较这两个对象，使用的默认是Object类equals()方法。<br>类重写了equals()方法：一般我们都重写equals()方法来比较两个对象中的属性是否相等；若它们的属性相等，则返回 true(即，认为这两个对象相等)。<br>说出你了解的排序算法，并说一下它们的复杂度；</p>]]></content>
       
       
       <categories>
           
-          <category> leetcode </category>
+          <category> 面经 </category>
           
       </categories>
       
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 面经 </tag>
+            
+        </tags>
       
     </entry>
     
@@ -27,12 +35,31 @@
       <link href="/2023/03/23/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/"/>
       <url>/2023/03/23/git%E5%88%86%E5%B8%83%E5%BC%8F%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E7%B3%BB%E7%BB%9F/</url>
       
-        <content type="html"><![CDATA[<h2 id="GIT与SVN："><a href="#GIT与SVN：" class="headerlink" title="GIT与SVN："></a>GIT与SVN：</h2><ul><li>git是分布式管理控制系统，个人本地有完整的版本数据。</li><li>SVN 是集中式版本控制系统，版本数据存储在服务器，用户必须联网才能使用。</li></ul><h2 id="GIT工作原理"><a href="#GIT工作原理" class="headerlink" title="GIT工作原理:"></a>GIT工作原理:</h2><h3 id="1-工作区域"><a href="#1-工作区域" class="headerlink" title="1.工作区域"></a>1.工作区域</h3><p>git本地有三个工作区域：工作目录，暂存区，资源库。</p><p>加上远程git仓库就可以分为四个工作区域，关系如下：</p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20230326154353606.png" alt="image-20230326154353606"></p><ul><li>working Directory (平时用来存放代码的地方) 使用git add files 将数据存入 stage。</li><li>stage ( 临时存放你的改动，其实是一个文件，保存即将提交的文件信息。) 使用 git commit 来把改动信息提交到本地仓库。</li><li>history (本地仓库，安全存放数据的位置，有所有版本的信息。) 使用git push 来把本地仓库信息提交到远程仓库。</li><li>remote directory (远程仓库) 代码托管服务器</li></ul><h3 id="2-工作流程"><a href="#2-工作流程" class="headerlink" title="2.工作流程:"></a>2.工作流程:</h3><p>如图:</p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20230326155058576.png" alt="image-20230326155058576"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="GIT与SVN："><a href="#GIT与SVN：" class="headerlink" title="GIT与SVN："></a>GIT与SVN：</h2><ul><li>git是分布式管理控制系统，个人本地有完整的版本数据。</li><li>SVN 是集中式版本控制系统，版本数据存储在服务器，用户必须联网才能使用。</li></ul><h2 id="GIT工作原理"><a href="#GIT工作原理" class="headerlink" title="GIT工作原理:"></a>GIT工作原理:</h2><h3 id="1-工作区域"><a href="#1-工作区域" class="headerlink" title="1.工作区域"></a>1.工作区域</h3><p>git本地有三个工作区域：工作目录，暂存区，资源库。</p><p>加上远程git仓库就可以分为四个工作区域，关系如下：</p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20230326154353606.png" alt="image-20230326154353606"></p><ul><li>working Directory (平时用来存放代码的地方) 使用git add files 将数据存入 stage。</li><li>stage ( 临时存放你的改动，其实是一个文件，保存即将提交的文件信息。) 使用 git commit 来把改动信息提交到本地仓库。</li><li>history (本地仓库，安全存放数据的位置，有所有版本的信息。) 使用git push 来把本地仓库信息提交到远程仓库。</li><li>remote directory (远程仓库) 代码托管服务器</li></ul><h3 id="2-工作流程"><a href="#2-工作流程" class="headerlink" title="2.工作流程:"></a>2.工作流程:</h3><p>如图:</p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20230326155058576.png" alt="image-20230326155058576"></p><h3 id="3-git常用命令"><a href="#3-git常用命令" class="headerlink" title="3.git常用命令:"></a>3.git常用命令:</h3><p><img src="https://www.runoob.com/wp-content/uploads/2015/02/011500266295799.jpg" alt="img"></p>]]></content>
       
       
       <categories>
           
           <category> git </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>leetcode 08.08有重复字符串的排列组合</title>
+      <link href="/2023/03/23/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/"/>
+      <url>/2023/03/23/%E5%88%B7%E9%A2%98%E8%AE%B0%E5%BD%95/</url>
+      
+        <content type="html"><![CDATA[<h2 id="面试题-08-08-有重复字符串的排列组合"><a href="#面试题-08-08-有重复字符串的排列组合" class="headerlink" title="面试题 08.08. 有重复字符串的排列组合:"></a><a href="https://leetcode.cn/problems/permutation-ii-lcci/">面试题 08.08. 有重复字符串的排列组合:</a></h2><p>有&#x2F;无重复字符串的排列组合。编写一种方法，计算某字符串的所有排列组合。</p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20220925192028805.png" alt="image-20220925192028805"></p><h4 id="ans："><a href="#ans：" class="headerlink" title="ans："></a>ans：</h4><h5 id="深度优先搜索-dfs-deep-first-search："><a href="#深度优先搜索-dfs-deep-first-search：" class="headerlink" title="深度优先搜索 dfs deep first search："></a>深度优先搜索 dfs deep first search：</h5><p>用于遍历或搜索图&#x2F;树的算法。</p><p>思路：</p><ol><li><p>创建结果存储变量， 初始化当前变量</p></li><li><p>设计递归函数，大致流程：</p><ul><li>到达结尾返回</li><li>未到达结尾更新当前结果</li><li>到达末尾子节点，进行最优结果更新</li><li>分别对当前节点的左&#x2F;右子节点调用递归函数</li></ul></li><li><p>调用递归</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> leetcode </category>
           
       </categories>
       
