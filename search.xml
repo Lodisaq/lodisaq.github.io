@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>软开面经</title>
+      <link href="/2023/03/30/%E4%BA%A4%E8%A1%8C%E8%BD%AF%E5%BC%80%E9%9D%A2%E8%AF%95/"/>
+      <url>/2023/03/30/%E4%BA%A4%E8%A1%8C%E8%BD%AF%E5%BC%80%E9%9D%A2%E8%AF%95/</url>
+      
+        <content type="html"><![CDATA[<h3 id="为什么我选择交行-x2F-我对交行的了解："><a href="#为什么我选择交行-x2F-我对交行的了解：" class="headerlink" title="为什么我选择交行&#x2F;我对交行的了解："></a>为什么我选择交行&#x2F;我对交行的了解：</h3><ul><li><p>第一，交通银行有着悠久的历史以及雄厚的实力，交通银行创始于1908年到2019年，就整整经营111年了，是唯一一家经营超过一百年的银行，所以也被称作百年交行，有着非常悠久的历史。交行作为国有六大行之一，有着非常雄厚的实力，集团业务覆盖面非常广，不仅拥有很多分支机构，旗下还有7家非银行子公司，除此之外，交通银行还是常熟农商银行的第一大股东、西藏银行的并列第一大股东，战略入股海南银行，控股4家村镇银行。</p></li><li><p>第二，交通银行与时俱进，不仅积极响应国家号召，支持实体经济，开展金融扶贫，而且还针对客户的不同需求，推出了很多创新性的产品，比如下岗失业小额担保贷，用于支持下岗失业人员、转业军人等自谋职业，有着很强的针对性以及很重要的社会意义；比如文化创意企业贷交通银行向文化创意小企业发放由企业以合法有效的著作权提供质押担保，可以有效地解决这类企业缺少实物抵押，融资难得问题。</p></li><li><p>第三，交通银行非常重视员工的培养和发展。不仅有着非常完善的员工培养方案，而且还积极畅通职业发展通道，通过“纵向晋升、横向转换、交叉兼任等多种途径，搭建职业发展的“立交桥”，让员工在合适岗位上高质发展。</p></li></ul><p>作为国有六大行之一，交通银行经营时间超过百年，历史悠久实力雄厚。交行的待遇福利是我选择的原因之一，交行的互联网金融是一个非常适合年轻人发展的平台，是我们非常向往的企业。</p><h3 id="快排的时间复杂度"><a href="#快排的时间复杂度" class="headerlink" title="快排的时间复杂度:"></a>快排的时间复杂度:</h3><p>O(nlogn)</p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/image-20230330132618440.png" alt="image-20230330132618440"></p><h3 id="网络模型："><a href="#网络模型：" class="headerlink" title="网络模型："></a>网络模型：</h3><p><img src="https://pic3.zhimg.com/80/v2-1578921092d775e024345fa8a531a85e_720w.webp" alt="img"></p><p><img src="https://cdn.staticaly.com/gh/Lodisaq/blogImage@main/Image/OSI%E4%B8%83%E5%B1%82.png" alt="OSI七层"></p><h3 id="TCP三次握手："><a href="#TCP三次握手：" class="headerlink" title="TCP三次握手："></a>TCP三次握手：</h3><p>第一次握手：主机A通过向主机B 发送一个含有同步序列号的标志位的数据段给主机B，向主机B 请求建立连接，通过这个数据段， 主机A告诉主机B 两件事：我想要和你通信；你可以用哪个序列号作为起始数据段来回应我。</p><p>第二次握手：主机B 收到主机A的请求后，用一个带有确认应答（ACK）和同步序列号（SYN）标志位的数据段响应主机A，也告诉主机A两件事：我已经收到你的请求了，你可以传输数据了；你要用那个序列号作为起始数据段来回应我</p><p>第三次握手：主机A收到这个数据段后，再发送一个确认应答，确认已收到主机B 的数据段：”我已收到回复，我现在要开始传输实际数据了，这样3次握手就完成了，主机A和主机B 就可以传输数据了。</p><h3 id="TCP四次断开："><a href="#TCP四次断开：" class="headerlink" title="TCP四次断开："></a>TCP四次断开：</h3><p>第一次： 当主机A完成数据传输后,将控制位FIN置1，提出停止TCP连接的请求 ；</p><p>第二次： 主机B收到FIN后对其作出响应，确认这一方向上的TCP连接将关闭,将ACK置1；</p><p>第三次： 由B 端再提出反方向的关闭请求,将FIN置1 ；</p><p>第四次： 主机A对主机B的请求进行确认，将ACK置1，双方向的关闭结束.。</p><h3 id="TCP与UDP区别："><a href="#TCP与UDP区别：" class="headerlink" title="TCP与UDP区别："></a>TCP与UDP区别：</h3><p>1、基于连接与无连接；</p><p>2、对系统资源的要求（TCP较多，UDP少）；</p><p>3、UDP程序结构较简单；</p><p>4、流模式与数据报模式 ；</p><p>5、TCP保证数据正确性，UDP可能丢包；</p><p>6、TCP保证数据顺序，UDP不保证。</p><h3 id="String，StringBuffer，StirngBuilder区别："><a href="#String，StringBuffer，StirngBuilder区别：" class="headerlink" title="String，StringBuffer，StirngBuilder区别："></a>String，StringBuffer，StirngBuilder区别：</h3><ul><li>String，对于String来说，是把数据存放在了常量池中，因为所有的String，默认都是以常量形式保存，且由final修饰，因此在线程池中它是线程安全的。因为每一个String当被创建好了以后，他就不再发生任何变化，但是它的执行速度是最差的。<br>我们要创建String的时候，他在常量池中对这些信息进行处理，如果在程序中出现了大量字符串拼接的工作，效率是非常底下的。<br>因此使用场景是在少量字符串操作的时候才建议直接使用String来操作。</li><li>StringBuffer相对于StringBuilder效率要相对低一点，但也远比String要高的多。效率低的原因：对于StringBuffer来说更多的考虑到了多线程的情况，在进行字符串操作的时候，它使用了synchronize关键字，对方法进行了同步处理。<br>因此StringBuffer适用于多线程环境下的大量操作。</li><li>线程安全与线程不安全：<br>在进行多线程处理的时候，如果多个线程对于这一个对象同时产生操作，会产生预期之外的结果。对于StringBuilder来说，执行效率虽然高，但是因为线程不安全，所以不建议在多线程的环境下对同一个StringBuilder对象进行操作。<br>因此StringBuilder适用于单线程环境下的大量字符串操作。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 面经 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+            <tag> 面经 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>java面经</title>
       <link href="/2023/03/27/%E9%9D%A2%E8%AF%95java%E5%BC%80%E5%8F%91/"/>
       <url>/2023/03/27/%E9%9D%A2%E8%AF%95java%E5%BC%80%E5%8F%91/</url>
